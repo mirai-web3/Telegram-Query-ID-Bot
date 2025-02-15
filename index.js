@@ -8,8 +8,8 @@
 
 require('dotenv').config();
 
-const { Api, TelegramClient } = require('telegram');
-const { StringSession } = require('telegram/sessions');
+const { Api, TelegramClient } = require('@gramjs/telegram');
+const { StringSession } = require('@gramjs/telegram/sessions');
 const fs = require('fs');
 const path = require('path');
 const readline = require('readline');
