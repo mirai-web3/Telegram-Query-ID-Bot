@@ -1,0 +1,15 @@
+{
+  "name": "telegram-query-id-bot",
+  "version": "1.0.0",
+  "description": "A Node.js script to get bulk Query IDs from multiple Telegram accounts at once.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "mirai-web3",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "telegram": "^6.0.0"
+  }
+}
