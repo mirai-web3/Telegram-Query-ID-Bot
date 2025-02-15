@@ -15,7 +15,6 @@ Welcome to the Telegram Query ID Bot – your quick and easy way to grab bulk Qu
 ```
 Telegram-Query-ID-Bot/
 ├── index.js           # The main script file
-├── package.json       # NPM dependencies and scripts
 ├── .env.example       # Example env file (copy this to .env)
 ├── README.md          # This readme file!
 ├── sessions/          # Sessions folder (created automatically)
