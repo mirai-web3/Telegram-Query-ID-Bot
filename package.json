@@ -31,7 +31,8 @@
       "node-telegram-bot-api": "^0.66.0",
       "telegram": "^2.24.11",
       "telegram-bot-api": "^2.0.1",
-      "yargs": "^17.7.2"
+      "yargs": "^17.7.2",
+      "dotenv": "^16.0.0",
     },
     "devDependencies": {},
     "engines": {
