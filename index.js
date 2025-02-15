@@ -8,8 +8,8 @@
 
 require('dotenv').config();
 
-const { Api, TelegramClient } = require('@gramjs/telegram');
-const { StringSession } = require('@gramjs/telegram/sessions');
+const { Api, TelegramClient } = require('telegram');
+const { StringSession } = require('telegram/sessions');
 const fs = require('fs');
 const path = require('path');
 const readline = require('readline');
@@ -92,7 +92,7 @@ async function loginWithSessionFile() {
 
             try {
                 const client = new TelegramClient(new StringSession(sessionData), apiId, apiHash, { connectionRetries: 5 });
-                await new Promise(resolve => setTimeout(resolve, 5000));
+                await new Promise(resolve => setTimeout(resolve, 5000));  // Delay 5 detik
                 await client.start();
                 const phone = file.replace('.session', '');
                 console.log(`Logged in using session file: ${file}`);
@@ -112,7 +112,7 @@ async function loginWithSessionFile() {
 
         try {
             const client = new TelegramClient(new StringSession(sessionData), apiId, apiHash, { connectionRetries: 5 });
-            await new Promise(resolve => setTimeout(resolve, 5000));
+            await new Promise(resolve => setTimeout(resolve, 5000));  // Delay 5 detik
             await client.start();
             const phone = selectedFile.replace('.session', '');
             console.log(`Logged in using session file: ${selectedFile}`);
